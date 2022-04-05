@@ -1,0 +1,37 @@
+@import "navbar";
+@import "hero";
+@import "content";
+@import "reviews";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+//--Buttons--
+.actionButton {
+  background-color: #949238;
+  border-radius: 28px;
+  border: 1px solid #939c18;
+  display: inline-block;
+  cursor: pointer;
+  color: #585858;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 6px 31px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #a9bf2a;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.image {
+  max-width: 100%;
+}
