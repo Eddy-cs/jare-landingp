@@ -1,6 +1,48 @@
+@import "variables";
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 60px;
+
+  &__left {
+    margin-left: 50px;
+    grid-column: 1 / 3;
+  }
+  
+  &__right {
+    grid-column: 2 / -1;
+  }
+  
+  &__left, &__right {
+    grid-row: 1 / 2;
+  }
+  
+  &__title {
+    margin-top: 90px;
+    background-color: $yellow;
+  }
+
+  &__button {
+    height: 57px;
+    width: 280px;
+    background-color: $yellow;
+    border: none;
+    
+    &:hover {
+      background-color: $orange-opaque;
+    }
+  }
+}
+
+.blob {
+  position: relative;
+  margin: 0px;
+  right: -200px;
+&__front {
+  position: relative;
+  // top: 694px;
+  right:-55px;
+  bottom: 0px;
+  z-index: 3;
+}
 }

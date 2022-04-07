@@ -2,38 +2,22 @@
 @import "hero";
 @import "content";
 @import "reviews";
-@import "colors";
+@import "variables";
 @import "clients";
 
-* {
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
-//--Buttons--
-.actionButton {
-  background-color: #949238;
-  border-radius: 28px;
-  border: 1px solid #939c18;
-  display: inline-block;
+.button {
+  border-radius: 27px;
   cursor: pointer;
-  color: #585858;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 6px 31px;
-  text-decoration: none;
-
-  &:hover {
-    background-color: #a9bf2a;
-  }
-  &:active {
-    position: relative;
-    top: 1px;
-  }
 }
 
-.image {
-  max-width: 100%;
-}

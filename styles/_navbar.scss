@@ -1,11 +1,20 @@
+@import "variables";
+
 .navbar {
-  margin: 0px 20px;
-  padding: 24px 32px;
+  margin: 24px 90px;
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(4, 1fr) 10fr;
 
   &__button {
+    height: 40px;
     margin-left: auto;
+    background-color: #ffffff;
+    border: 3px solid $orange-strong;
+    padding-inline: 20px;
+    
+  &:hover {
+    border-color: $orange-opaque;
+      }
   }
 }
