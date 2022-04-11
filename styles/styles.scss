@@ -4,9 +4,11 @@
 @import "reviews";
 @import "variables";
 @import "clients";
+@import "mixins";
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *, *::before, *::after {
@@ -21,3 +23,20 @@ html {
   cursor: pointer;
 }
 
+.wrapper {
+  margin: auto;
+  width: 128rem;
+  background-color: white;
+}
+
+body {
+  background-color:aliceblue;
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+p {
+font-size: 2rem;
+}

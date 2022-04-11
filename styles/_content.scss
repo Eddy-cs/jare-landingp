@@ -1,29 +1,17 @@
 .content {
-  padding: 50px 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 
   &__img {
-    background-color: aqua;
     grid-row: span 3;
-    //     &--right {
-
-    //     }
-
-    &--left {
-      grid-column-start: 4;
-      grid-column-end: 3;
-    }
+    width: 50vw;
   }
-  &__tittle {
-    font-family: "Courier New", Courier, monospace;
-    background-color: beige;
-    &--main {
+  &__tittle{
+    background-color: $yellow;
       grid-column: span 2;
-      background-color: rgb(39, 65, 56);
     }
-  }
+
 
   &__p {
     background-color: rgb(126, 194, 126);
