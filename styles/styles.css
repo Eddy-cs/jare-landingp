@@ -89,7 +89,6 @@
 
 .blob {
   position: absolute;
-  justify-items: left;
   top: 5rem;
 }
 
@@ -161,20 +160,31 @@
 .content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   gap: 1.5rem;
-  height: 93rem;
 }
 
 .content__img {
-  grid-row: span 3;
-  width: 100%;
+  position: relative;
+}
+
+.content__text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .content__tittle {
   background-color: #FDC80E;
   grid-column: span 2;
+}
+
+.content__tittle::before {
+  content: 'Lorem ipsum, dolor sit amet';
+  font-size: small;
+  display: block;
 }
 
 .content__p {
