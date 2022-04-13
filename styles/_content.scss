@@ -2,10 +2,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  height: 93rem;
 
   &__img {
     grid-row: span 3;
-    width: 50vw;
+    width: 100%;
   }
   &__tittle{
     background-color: $yellow;
