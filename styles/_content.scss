@@ -1,21 +1,44 @@
 .content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 50% 50%;
   gap: 1.5rem;
-  height: 93rem;
+  // height: 93rem;
 
   &__img {
-    grid-row: span 3;
-    width: 100%;
+    // display: block;
+    // overflow: hidden;
+    position: relative;
+    // width: 100%;
+    // right: 10rem;
+    // height: 83.1rem;
+    // width: 85rem;
+    // background-color: red;
   }
+
+  &__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   &__tittle{
     background-color: $yellow;
-      grid-column: span 2;
-    }
+    grid-column: span 2;
 
+    &::before{
+      content: 'Lorem ipsum, dolor sit amet';
+      font-size: small;
+      display: block;
+    }
+    }
 
   &__p {
     background-color: rgb(126, 194, 126);
     margin: 0%;
   }
 }
+
+// .content__tittle::before {
+  
+//   height: 10px;
+//   background-color: red;
+// }
