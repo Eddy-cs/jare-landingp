@@ -2,5 +2,32 @@
 .clients {
     &__brands{
         display: grid;
+        // justify-items: center;
+        // align-items: center;
+        // margin: auto;
+        justify-items: center;
+        justify-content: center;
+        // justify-self: center;
+        // align-items: center;
+        // align-self: center;
+        // align-content: center;
+        
     }
+    &__img {
+        height: 14rem;
+    }
+}
+
+.rowone {
+    display: grid;
+    // padding: 2rem  10rem;
+    gap: 6%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.rowtwo {
+    display: grid;
+    // padding: 2rem 20rem;
+    // justify-items: center;
+    grid-template-columns: 1fr 1fr;
 }

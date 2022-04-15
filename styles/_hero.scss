@@ -5,14 +5,18 @@
   grid-template-columns: 1fr 1fr;
   height: 93rem;
   
-  @media (max-width: 1300px){
-    grid-template-columns: 40% 60%;
-  }
+  // @media (max-width: 1300px){
+  //   grid-template-columns: 40% 60%;
+  // }
 
   @media (max-width: 800px) {
     display: block;
     height: auto;
   }
+
+  // &__left {
+  //   z-index: 5;
+  // }
   
   &__right {
     position: relative;
@@ -26,7 +30,6 @@
 
   
   &__title {
-    background-color: $yellow ;
     height: 31.5rem;
     margin-top: 9rem;
     padding-top: 5rem;
@@ -54,7 +57,7 @@
   position: absolute;
   top: 5rem;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1300px) {
     height: 71.4rem;
   }
 
@@ -67,7 +70,7 @@
     height: 54.7rem;
     top: 19rem;
 
-    @media (max-width: 1000px) {  
+    @media (max-width: 1300px) {  
     height: 45.5rem;
     top: 15rem;
     }
@@ -84,7 +87,7 @@
     top: 65.2rem;
     left: 12.3rem;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1300px) {
       height: 21.6rem;
       top: 55rem;
       left: 10.1rem;
@@ -104,16 +107,13 @@
   align-items: center;
 }
 
-
-//   .container{
-//     &__yellow{
-//         background-color: $yellow;
-//         height: 31.5rem;
-//         margin-top: 9rem;
-//         padding-top: 5rem;
-//         padding-left: 3rem;
-//         width: 100%;
-//         position: absolute;
-//         z-index: -1;
-//     }
-// }
+.banner {
+  display: block;
+  height: 32rem;
+  background-color: $yellow;
+  width:100%;
+  top: 13rem;
+  right: 0rem;
+  position: absolute;
+  z-index: -3;
+}

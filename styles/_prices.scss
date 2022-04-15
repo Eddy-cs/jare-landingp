@@ -1,0 +1,7 @@
+.prices {
+    display: grid;
+    justify-content: center;
+    &__card{
+        display: grid;
+    }
+}
