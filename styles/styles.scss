@@ -65,13 +65,17 @@ a {
 }
 
 .contban {
-  display: block;
+  // display: block;
   height: 21rem;
   background-color: $yellow;
-  width: 100%;
-  top: 105rem;
+  width: 100vw;
+  // top: 105rem;
   position: absolute;
   z-index: -3;
+  left: 50%;
+  transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
   @media (max-width: 500px) {
     height: 27rem;
     top: 145rem;
@@ -80,7 +84,7 @@ a {
     top: 199rem;
   }
   &--clients{
-    top: 284rem;
+    top: 5rem;
     height: 10rem;
   }
   &--prices{
@@ -89,14 +93,16 @@ a {
 }
 
 .banner {
-  display: block;
+  // display: block;
   height: 32rem;
   background-color: $yellow;
-  width:100%;
+  width:100vw;
   top: 13rem;
   right: 0rem;
   position: absolute;
   z-index: -3;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 // .float{

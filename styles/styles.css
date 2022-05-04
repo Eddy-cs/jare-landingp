@@ -222,7 +222,6 @@
 }
 
 .content {
-  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -436,6 +435,13 @@
       grid-template-columns: repeat(5, 1fr);
 }
 
+@media (max-width: 1200px) {
+  .rowone {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
 .rowtwo {
   display: -ms-grid;
   display: grid;
@@ -444,6 +450,14 @@
   justify-items: center;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1200px) {
+  .rowtwo {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    margin-top: 20rem;
+  }
 }
 
 .prices__price {
@@ -504,7 +518,7 @@
 .prices__button {
   background-color: #fff0d2;
   border-radius: 13px;
-  border: 2px solid #303030;
+  border: none;
   height: 4.3rem;
   cursor: pointer;
 }
@@ -593,13 +607,16 @@ a {
 }
 
 .contban {
-  display: block;
   height: 21rem;
   background-color: #FDC80E;
-  width: 100%;
-  top: 105rem;
+  width: 100vw;
   position: absolute;
   z-index: -3;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (max-width: 500px) {
@@ -614,7 +631,7 @@ a {
 }
 
 .contban--clients {
-  top: 284rem;
+  top: 5rem;
   height: 10rem;
 }
 
@@ -623,13 +640,15 @@ a {
 }
 
 .banner {
-  display: block;
   height: 32rem;
   background-color: #FDC80E;
-  width: 100%;
+  width: 100vw;
   top: 13rem;
   right: 0rem;
   position: absolute;
   z-index: -3;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=styles.css.map */

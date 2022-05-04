@@ -44,7 +44,8 @@
     &__button {
         background-color: $orange-light;
         border-radius: 13px;
-        border: 2px solid #303030;
+        // border: 2px solid #303030;
+        border: none;
         height: 4.3rem;
         cursor: pointer;
         &:hover {
