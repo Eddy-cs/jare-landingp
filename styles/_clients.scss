@@ -1,5 +1,6 @@
 
 .clients {
+    filter: saturate(0%);
     &__brands{
         display: grid;
         // justify-items: center;
@@ -14,20 +15,27 @@
         
     }
     &__img {
-        height: 14rem;
+        height: 13.7rem;
+        &--anc{
+            height: 8.2rem;
+        }
+        &--tue{
+            height: 11.2rem;
+        }
     }
 }
 
 .rowone {
     display: grid;
-    // padding: 2rem  10rem;
+    margin-top: 5rem;
     gap: 6%;
     grid-template-columns: repeat(5, 1fr);
 }
 
 .rowtwo {
     display: grid;
-    // padding: 2rem 20rem;
-    // justify-items: center;
+    gap: 6%;
+    margin: 5rem 0;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
 }

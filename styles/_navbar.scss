@@ -8,7 +8,20 @@
   padding: 2.4rem 0;
   height: 4rem;
   gap: 3rem;
-  grid-template-columns: 0.5fr 1.5fr 1.5fr 1.5fr 10fr;
+  grid-template-columns: 0.5fr 4.5fr 10fr;
+
+  &__acontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 800px) {
+      display: none;
+    }
+    // &--hiden{
+    //   @media (max-width: 800px) {
+    //     display: block;
+      // }
+    // }
+  }
 
   &__button {
     height: 40px;
@@ -33,7 +46,7 @@
     &:hover {
       text-decoration: none;
       background-color: $orange-light;
-      // padding: auto;
+    // padding: auto;
     }
   }
 }

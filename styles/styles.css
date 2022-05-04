@@ -5,8 +5,21 @@
   padding: 2.4rem 0;
   height: 4rem;
   gap: 3rem;
-  -ms-grid-columns: 0.5fr 1.5fr 1.5fr 1.5fr 10fr;
-      grid-template-columns: 0.5fr 1.5fr 1.5fr 1.5fr 10fr;
+  -ms-grid-columns: 0.5fr 4.5fr 10fr;
+      grid-template-columns: 0.5fr 4.5fr 10fr;
+}
+
+.navbar__acontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .navbar__acontainer {
+    display: none;
+  }
 }
 
 .navbar__button {
@@ -83,6 +96,19 @@
   padding-top: 5rem;
 }
 
+@media (max-width: 1100px) {
+  .hero__title {
+    margin-top: 7rem;
+    font-size: 5.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__title {
+    font-size: 4.8rem;
+  }
+}
+
 .hero__button {
   font-size: 1.6rem;
   height: 5.7rem;
@@ -92,12 +118,31 @@
   margin-left: 3rem;
 }
 
+@media (max-width: 1100px) {
+  .hero__button {
+    height: 4rem;
+    width: 20rem;
+  }
+}
+
 .hero__button:hover {
   background-color: #FBCF79;
 }
 
 .hero__description {
-  margin: 2.5rem 0rem 2.5rem;
+  margin: 2.5rem 0rem;
+}
+
+@media (max-width: 1100px) {
+  .lg--text {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .sm--text {
+    display: none;
+  }
 }
 
 .blob {
@@ -170,15 +215,10 @@
           align-items: center;
 }
 
-.banner {
-  display: block;
-  height: 32rem;
-  background-color: #FDC80E;
-  width: 100%;
-  top: 13rem;
-  right: 0rem;
-  position: absolute;
-  z-index: -3;
+@media (max-width: 1300px) {
+  .brand {
+    height: 15rem;
+  }
 }
 
 .content {
@@ -213,7 +253,18 @@
 }
 
 .content__img--right {
-  right: unset;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .content__img--right {
+    width: 96%;
+    position: absolute;
+    right: 0rem;
+    top: 0;
+    right: -40%;
+    position: absolute;
+  }
 }
 
 .content__text {
@@ -236,11 +287,36 @@
   grid-column: span 2;
 }
 
+.content__tittle::after {
+  content: 'Facilita la manera en la que trabajas al dejar el trabajo de publicidad en nuestras manos';
+  font-size: 1.9rem;
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .content__tittle::after {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin: 3rem 0 2rem;
+  }
+}
+
 @media (max-width: 500px) {
   .content__tittle {
     padding-top: 2rem;
-    padding-left: 40%;
     margin-bottom: 5rem;
+  }
+  .content__tittle--left {
+    padding-left: 40%;
+  }
+  .content__tittle--left::after {
+    padding-left: 35%;
+  }
+  .content__tittle--right {
+    padding-right: 40%;
+  }
+  .content__tittle--right::after {
+    padding-right: 25%;
   }
 }
 
@@ -260,21 +336,6 @@
   }
 }
 
-.content__tittle::after {
-  content: 'Facilita la manera en la que trabajas al dejar el trabajo de publicidad en nuestras manos';
-  font-size: 1.9rem;
-  display: block;
-  margin: 3rem 0 2rem;
-}
-
-@media (max-width: 500px) {
-  .content__tittle::after {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    padding-left: 35%;
-  }
-}
-
 @media (max-width: 500px) {
   .content__icons {
     margin: 0 3rem;
@@ -290,21 +351,59 @@
   height: 5rem;
 }
 
-.contban {
-  display: block;
-  height: 21rem;
-  background-color: #FDC80E;
-  width: 100%;
-  top: 105rem;
-  position: absolute;
-  z-index: -3;
+.content__icons--pie::before {
+  background-image: url(/styles/image/icons/Chart-pie.png);
 }
 
-@media (max-width: 500px) {
-  .contban {
-    height: 27rem;
-    top: 145rem;
-  }
+.content__icons--invoice::before {
+  background-image: url(/styles/image/icons/Invoice.png);
+}
+
+.content__icons--flask::before {
+  background-image: url(/styles/image/icons/Flask-alt.png);
+}
+
+.content__icons--edit::before {
+  background-image: url(/styles/image/icons/Edit.png);
+}
+
+.content__icons--file::before {
+  background-image: url(/styles/image/icons/File-user.png);
+}
+
+.content__icons--print::before {
+  background-image: url(/styles/image/icons/Printer.png);
+}
+
+.content__icons--clip::before {
+  background-image: url(/styles/image/icons/Clipboard.png);
+}
+
+.footer {
+  height: 15rem;
+  background-color: #FDC80E;
+  margin-top: 10rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8fr 1fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr 1fr;
+  gap: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.clients {
+  -webkit-filter: saturate(0%);
+          filter: saturate(0%);
 }
 
 .clients__brands {
@@ -317,12 +416,21 @@
 }
 
 .clients__img {
-  height: 14rem;
+  height: 13.7rem;
+}
+
+.clients__img--anc {
+  height: 8.2rem;
+}
+
+.clients__img--tue {
+  height: 11.2rem;
 }
 
 .rowone {
   display: -ms-grid;
   display: grid;
+  margin-top: 5rem;
   gap: 6%;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
@@ -331,21 +439,91 @@
 .rowtwo {
   display: -ms-grid;
   display: grid;
+  gap: 6%;
+  margin: 5rem 0;
+  justify-items: center;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-.prices {
+.prices__price {
+  font-size: 3.7rem;
+}
+
+.prices__description {
+  font-size: 1.5rem;
+}
+
+.prices__description::before {
+  display: inline-block;
+  content: '';
+  width: 3rem;
+  height: 2rem;
+  background-size: 3rem;
+  background-image: url(/styles/image/icons/Check.png);
+  background-repeat: no-repeat;
+}
+
+.prices__icon::before {
+  display: block;
+  content: '';
+  height: 5rem;
+  background-image: url(/styles/image/icons/Clipboard-alt.png);
+  background-repeat: no-repeat;
+  -webkit-filter: saturate(0%);
+          filter: saturate(0%);
+}
+
+.prices__container {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
+}
+
+@media (max-width: 1300px) {
+  .prices__container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    row-gap: 10rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .prices__container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.prices__button {
+  background-color: #fff0d2;
+  border-radius: 13px;
+  border: 2px solid #303030;
+  height: 4.3rem;
+  cursor: pointer;
+}
+
+.prices__button:hover {
+  text-decoration: none;
+  background-color: #FDC80E;
 }
 
 .prices__card {
+  padding: 1.6rem 2.6rem;
   display: -ms-grid;
   display: grid;
+  height: 59.4rem;
+  max-width: 30.2rem;
+  background-color: white;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 4px 50px -4px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 4px 50px -4px rgba(0, 0, 0, 0.26);
 }
 
 html {
@@ -375,12 +553,6 @@ html {
 
 h1 {
   font-size: 6.4rem;
-}
-
-@media (max-width: 500px) {
-  h1 {
-    font-size: 4.8rem;
-  }
 }
 
 h2 {
@@ -418,5 +590,46 @@ p {
 a {
   font-size: 1.6rem;
   color: black;
+}
+
+.contban {
+  display: block;
+  height: 21rem;
+  background-color: #FDC80E;
+  width: 100%;
+  top: 105rem;
+  position: absolute;
+  z-index: -3;
+}
+
+@media (max-width: 500px) {
+  .contban {
+    height: 27rem;
+    top: 145rem;
+  }
+}
+
+.contban--2 {
+  top: 199rem;
+}
+
+.contban--clients {
+  top: 284rem;
+  height: 10rem;
+}
+
+.contban--prices {
+  top: 330rem;
+}
+
+.banner {
+  display: block;
+  height: 32rem;
+  background-color: #FDC80E;
+  width: 100%;
+  top: 13rem;
+  right: 0rem;
+  position: absolute;
+  z-index: -3;
 }
 /*# sourceMappingURL=styles.css.map */

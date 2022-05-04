@@ -14,16 +14,22 @@
     position: absolute;
     right: 0rem;
     // @media (max-width: 1000px) {
-    //   width: auto;
-    // }
-    @media (max-width: 500px) {
-      width: 96%;
-      // height: 100%;
-      left: -40%;
-      // max-height: 340rem;
-    }
-    &--right{
-      right: unset;
+      //   width: auto;
+      // }
+      @media (max-width: 500px) {
+        width: 96%;
+        left: -40%;
+      }
+      &--right{
+        position: relative;
+        @media (max-width: 500px) {
+        width: 96%;
+        position: absolute;
+        right: 0rem;
+        top: 0;
+        right: -40%;
+        position: absolute;
+      }
     }
   }
 
@@ -40,10 +46,32 @@
 
   &__tittle{
     grid-column: span 2;
+    &::after{
+      content: 'Facilita la manera en la que trabajas al dejar el trabajo de publicidad en nuestras manos';
+      font-size: 1.9rem;
+      display: block;
+      @media (max-width: 500px) {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        margin: 3rem 0 2rem;
+      }
+    }
     @media (max-width: 500px) {
       padding-top: 2rem;
-      padding-left: 40%;
       margin-bottom: 5rem;
+      &--left{
+        padding-left: 40%;
+        &::after{
+          padding-left: 35%;
+        }
+      }
+      &--right{
+        padding-right: 40%;
+        &::after{
+          padding-right: 25%;
+        }
+
+      }
     }
     &::before{
       content: 'Lorem ipsum, dolor sit amet';
@@ -55,17 +83,6 @@
         font-size: 1.4rem;
         padding-left: 0%;
         margin-bottom: 1rem;
-      }
-    }
-    &::after{
-      content: 'Facilita la manera en la que trabajas al dejar el trabajo de publicidad en nuestras manos';
-      font-size: 1.9rem;
-      display: block;
-      margin: 3rem 0 2rem;
-      @media (max-width: 500px) {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-        padding-left: 35%;
       }
     }
   }
@@ -80,21 +97,28 @@
       background-image: url(/styles/image/icons/Lightbulb-alt.png);
       background-repeat: no-repeat;
       height: 5rem;
-   }
-  }
-}
-
-.contban {
-  display: block;
-  height: 21rem;
-  background-color: $yellow;
-  width: 100%;
-  top: 105rem;
-  position: absolute;
-  z-index: -3;
-  @media (max-width: 500px) {
-    height: 27rem;
-    top: 145rem;
+    }
+    &--pie::before{
+      background-image: url(/styles/image/icons/Chart-pie.png);
+    }
+    &--invoice::before{
+      background-image: url(/styles/image/icons/Invoice.png);
+    }
+    &--flask::before{
+      background-image: url(/styles/image/icons/Flask-alt.png);
+    }
+    &--edit::before{
+      background-image: url(/styles/image/icons/Edit.png);
+    }
+    &--file::before{
+      background-image: url(/styles/image/icons/File-user.png);
+    }
+    &--print::before{
+      background-image: url(/styles/image/icons/Printer.png);
+    }
+    &--clip::before{
+      background-image: url(/styles/image/icons/Clipboard.png);
+    }
   }
 }
 

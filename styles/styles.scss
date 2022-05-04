@@ -1,7 +1,7 @@
 @import "navbar";
 @import "hero";
 @import "content";
-@import "reviews";
+@import "footer";
 @import "variables";
 @import "clients";
 @import "mixins";
@@ -34,9 +34,6 @@ html {
 
 h1 {
   font-size: 6.4rem;
-  @media (max-width: 500px) {
-    font-size: 4.8rem;
-}
 }
 
 h2 {
@@ -66,3 +63,56 @@ a {
   font-size: 1.6rem ;
   color: black;
 }
+
+.contban {
+  display: block;
+  height: 21rem;
+  background-color: $yellow;
+  width: 100%;
+  top: 105rem;
+  position: absolute;
+  z-index: -3;
+  @media (max-width: 500px) {
+    height: 27rem;
+    top: 145rem;
+  }
+  &--2{
+    top: 199rem;
+  }
+  &--clients{
+    top: 284rem;
+    height: 10rem;
+  }
+  &--prices{
+    top: 330rem;
+  }
+}
+
+.banner {
+  display: block;
+  height: 32rem;
+  background-color: $yellow;
+  width:100%;
+  top: 13rem;
+  right: 0rem;
+  position: absolute;
+  z-index: -3;
+}
+
+// .float{
+// 	position:fixed;
+// 	width:60px;
+// 	height:60px;
+// 	bottom:40px;
+// 	right:40px;
+// 	background-color:#25d366;
+// 	color:#FFF;
+// 	border-radius:50px;
+// 	// text-align:center;
+//   font-size:30px;
+// 	box-shadow: 2px 2px 3px #999;
+//   z-index:100;
+//   margin-top:16px;
+//   background-image: url(/styles/image/icons/Whatsapp.png);
+//   background-repeat: no-repeat;
+// }
