@@ -1,6 +1,23 @@
 @import "variables";
 
 .prices {
+    position: relative;
+    // margin-top: 8.4rem;
+    &__container {
+        padding-top: 8.4rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        justify-items: center;
+        @media (max-width: 1300px) {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10rem;
+        }
+        @media (max-width: 800px) {
+        grid-template-columns: auto;
+        }
+    }
     &__price{
         font-size: 3.7rem;
     }
@@ -25,20 +42,6 @@
             background-image: url(/styles/image/icons/Clipboard-alt.png);
             background-repeat: no-repeat;
             filter:saturate(0%);
-        }
-    }
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        justify-content: center;
-        justify-items: center;
-        @media (max-width: 1300px) {
-        grid-template-columns: 1fr 1fr;
-        row-gap: 10rem;
-        }
-        @media (max-width: 800px) {
-        grid-template-columns: auto;
         }
     }
     &__button {

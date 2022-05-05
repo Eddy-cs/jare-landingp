@@ -1,8 +1,8 @@
 .content {
-  // position: relative;
+  position: relative;
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-bottom: 20rem;
+  margin-top: 25rem;
   @media (max-width: 500px) {
     display: block;
   }
@@ -46,7 +46,20 @@
 
   &__tittle{
     grid-column: span 2;
+    &::before{
+      content: 'Lorem ipsum, dolor sit amet';
+      font-size: 1.6rem;
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      @media (max-width: 500px) {
+        font-size: 1.4rem;
+        padding-left: 0%;
+        margin-bottom: 1rem;
+      }
+    }
     &::after{
+      margin-top: 2rem;
       content: 'Facilita la manera en la que trabajas al dejar el trabajo de publicidad en nuestras manos';
       font-size: 1.9rem;
       display: block;
@@ -73,18 +86,6 @@
 
       }
     }
-    &::before{
-      content: 'Lorem ipsum, dolor sit amet';
-      font-size: 1.6rem;
-      display: block;
-      margin-top: 1rem;
-      margin-bottom: 3rem;
-      @media (max-width: 500px) {
-        font-size: 1.4rem;
-        padding-left: 0%;
-        margin-bottom: 1rem;
-      }
-    }
   }
   &__icons{
     @media (max-width: 500px) {
@@ -96,7 +97,7 @@
       display: block;
       background-image: url(/styles/image/icons/Lightbulb-alt.png);
       background-repeat: no-repeat;
-      height: 5rem;
+      height: 7rem;
     }
     &--pie::before{
       background-image: url(/styles/image/icons/Chart-pie.png);
@@ -121,14 +122,3 @@
     }
   }
 }
-
-// .banner {
-//   display: block;
-//   height: 32rem;
-//   background-color: $yellow;
-//   width:100%;
-//   top: 13rem;
-//   right: 0rem;
-//   position: absolute;
-//   z-index: -3;
-// }

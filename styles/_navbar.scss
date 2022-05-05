@@ -2,13 +2,11 @@
 
 .navbar {
   display: grid;
-  // align-items: center;
-  // justify-items: center;
-  width: 100%;
   padding: 2.4rem 0;
-  height: 4rem;
   gap: 3rem;
   grid-template-columns: 0.5fr 4.5fr 10fr;
+  border-radius: 3rem;
+  z-index: 1;
 
   &__acontainer{
     display: grid;

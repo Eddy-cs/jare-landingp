@@ -1,14 +1,21 @@
 @import "variables";
 
 .footer {
+    position: relative;
     height: 15rem;
-    background-color: $yellow;
-    // width: 100vw;
+    // background-color: $yellow;
     margin-top: 10rem;
+    padding: 0 2.5%;
     display: grid;
     grid-template-columns: 1fr 8fr 1fr 1fr;
     gap: 5rem;
     align-items: center;
+    @media (max-width: 500px) {
+        font-size: 2rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
 
 
     &__social{
