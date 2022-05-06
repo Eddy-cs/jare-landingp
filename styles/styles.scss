@@ -11,6 +11,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -20,7 +21,7 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -32,6 +33,7 @@ body{
 .wrapper {
   margin: auto;
   max-width: 144rem;
+  min-width: 38rem;
   padding: 0 4%;
   position: relative;
   // z-index: -5;
@@ -83,6 +85,9 @@ a {
   &--hero{
     top: 18rem;
     height: 31.5rem;
+    @media (max-width: 850px) {
+      top: 14rem;
+    }
   }
   &--content1{
     top: 7.2rem;
