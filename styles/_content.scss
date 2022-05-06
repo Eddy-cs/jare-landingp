@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 25rem;
+  gap: 2%;
   @media (max-width: 500px) {
     display: block;
   }
@@ -20,15 +21,15 @@
         width: 96%;
         left: -40%;
       }
-      &--right{
+      &--right {
         position: relative;
+        left: -6rem;
         @media (max-width: 500px) {
+        position: absolute;
         width: 96%;
-        position: absolute;
-        right: 0rem;
-        top: 0;
+        top: 2rem;
+        left: unset;
         right: -40%;
-        position: absolute;
       }
     }
   }
@@ -38,7 +39,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     margin-top: 7.2rem;
-    padding-left: 5%;
     @media (max-width: 500px) {
     padding-left: 0;
     }

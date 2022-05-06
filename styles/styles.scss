@@ -6,6 +6,7 @@
 @import "clients";
 @import "mixins";
 @import "prices";
+@import "animations";
 
 html {
   box-sizing: border-box;
@@ -17,6 +18,10 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .button {
@@ -71,12 +76,10 @@ a {
   height: 21rem;
   width: 100vw;
   z-index: -3;
-  transform: translateX(-50%);
+  transform: translateX(-50vw);
+  // transform: translateX(-50%);
   left: 50%;
-  // @media (max-width: 500px) {
-  //   height: 27rem;
-  //   top: 145rem;
-  // }
+
   &--hero{
     top: 18rem;
     height: 31.5rem;
@@ -99,34 +102,3 @@ a {
     height: 17rem;
   }
 }
-
-// .banner {
-//   // display: block;
-//   height: 32rem;
-//   background-color: $yellow;
-//   width:100vw;
-//   top: 13rem;
-//   right: 0rem;
-//   position: absolute;
-//   z-index: -3;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
-
-// .float{
-// 	position:fixed;
-// 	width:60px;
-// 	height:60px;
-// 	bottom:40px;
-// 	right:40px;
-// 	background-color:#25d366;
-// 	color:#FFF;
-// 	border-radius:50px;
-// 	// text-align:center;
-//   font-size:30px;
-// 	box-shadow: 2px 2px 3px #999;
-//   z-index:100;
-//   margin-top:16px;
-//   background-image: url(/styles/image/icons/Whatsapp.png);
-//   background-repeat: no-repeat;
-// }

@@ -7,13 +7,17 @@
   grid-template-columns: 0.5fr 4.5fr 10fr;
   border-radius: 3rem;
   z-index: 1;
+  @media (max-width: 800px) {
+    grid-template-columns: 5% 1fr;;
+  }
 
-  &__acontainer{
+  &__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     @media (max-width: 800px) {
       display: none;
     }
+
     // &--hiden{
     //   @media (max-width: 800px) {
     //     display: block;

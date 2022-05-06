@@ -20,6 +20,8 @@
   
   &__right {
     position: relative;
+    // left: -17rem;
+    // width: 1fr;
     @media (max-width: 800px) {
       height: 85rem;
         }
@@ -95,7 +97,7 @@
   &__mid {
     position: absolute;
     height: 54.7rem;
-    top: 19rem;
+    top: 17rem;
 
     @media (max-width: 1300px) {  
     height: 45.5rem;
@@ -111,8 +113,8 @@
   &__front {
     position: absolute;
     z-index: 3;
-    top: 65.2rem;
-    left: 12.3rem;
+    top: 65.3rem;
+    left: 12rem;
 
     @media (max-width: 1300px) {
       height: 21.6rem;
@@ -136,3 +138,4 @@
     height: 15rem;
   }
 }
+

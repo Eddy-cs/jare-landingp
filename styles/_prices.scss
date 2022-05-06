@@ -8,11 +8,11 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
-        justify-content: center;
         justify-items: center;
         @media (max-width: 1300px) {
-        grid-template-columns: 1fr 1fr;
-        row-gap: 10rem;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 10rem;
+            padding: 10%;
         }
         @media (max-width: 800px) {
         grid-template-columns: auto;
