@@ -241,7 +241,6 @@
       grid-template-columns: 50% 50%;
   margin-top: 25rem;
   gap: 2%;
-  width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -391,6 +390,11 @@
 
 .content__icons--clip::before {
   background-image: url(/styles/image/icons/Clipboard.png);
+}
+
+.test {
+  position: relative;
+  width: 100%;
 }
 
 .footer {
@@ -743,8 +747,9 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  overflow-x: hidden;
+.overflow {
+  width: 100vw;
+  overflow: hidden;
 }
 
 .button {
@@ -755,9 +760,8 @@ body {
 .wrapper {
   margin: auto;
   max-width: 144rem;
-  min-width: 38rem;
+  min-width: 35rem;
   padding: 0 4%;
-  position: relative;
 }
 
 h1 {

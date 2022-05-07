@@ -4,7 +4,8 @@
   grid-template-columns: 50% 50%;
   margin-top: 25rem;
   gap: 2%;
-  width: 100%;
+  // width: 100%;
+  // max-width: 144rem;
   @media (max-width: 500px) {
     display: block;
   }
@@ -23,6 +24,7 @@
         left: -40%;
       }
       &--right {
+        // overflow-x:visible;
         position: relative;
         left: -6rem;
         @media (max-width: 500px) {
@@ -122,4 +124,9 @@
       background-image: url(/styles/image/icons/Clipboard.png);
     }
   }
+}
+
+.test{
+  position: relative;
+  width: 100%;
 }
