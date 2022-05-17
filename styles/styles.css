@@ -194,6 +194,20 @@
   }
 }
 
+.blob__mid--2 {
+  position: absolute;
+  height: 63rem;
+  top: 11rem;
+  left: 15rem;
+}
+
+.blob__mid--3 {
+  position: absolute;
+  height: 70rem;
+  top: 12rem;
+  left: 20rem;
+}
+
 .blob__front {
   position: absolute;
   z-index: 3;
@@ -631,11 +645,11 @@
 }
 
 .animation__pageLoad {
-  -webkit-animation: 300ms pageload ease-in;
-          animation: 300ms pageload ease-in;
+  -webkit-animation: 300ms pageLoad ease-in;
+          animation: 300ms pageLoad ease-in;
 }
 
-@-webkit-keyframes pageload {
+@-webkit-keyframes pageLoad {
   0% {
     visibility: hidden;
     opacity: 0;
@@ -650,7 +664,7 @@
   }
 }
 
-@keyframes pageload {
+@keyframes pageLoad {
   0% {
     visibility: hidden;
     opacity: 0;
@@ -666,11 +680,11 @@
 }
 
 .animation__pageLoad--up {
-  -webkit-animation: 300ms pageload--up ease-in;
-          animation: 300ms pageload--up ease-in;
+  -webkit-animation: 300ms pageLoad--up ease-in;
+          animation: 300ms pageLoad--up ease-in;
 }
 
-@-webkit-keyframes pageload--up {
+@-webkit-keyframes pageLoad--up {
   0% {
     visibility: hidden;
     opacity: 0;
@@ -685,7 +699,7 @@
   }
 }
 
-@keyframes pageload--up {
+@keyframes pageLoad--up {
   0% {
     visibility: hidden;
     opacity: 0;
@@ -697,6 +711,41 @@
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+.animation__pageLoad--left {
+  -webkit-animation: 300ms pageLoad--left ease-in;
+          animation: 300ms pageLoad--left ease-in;
+}
+
+@-webkit-keyframes pageLoad--left {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateX(7px);
+            transform: translateX(7px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes pageLoad--left {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateX(7px);
+            transform: translateX(7px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
