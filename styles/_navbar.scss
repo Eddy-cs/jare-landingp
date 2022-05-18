@@ -2,19 +2,34 @@
 
 .navbar {
   display: grid;
-  padding: 2.4rem 0;
+  place-items: center;
+  padding-top: 4rem;
   gap: 3rem;
   grid-template-columns: 0.5fr 4.5fr 10fr;
   border-radius: 3rem;
   z-index: 1;
   @media (max-width: 800px) {
-    grid-template-columns: 5% 1fr;;
+    grid-template-columns: 5% 5% 1fr;;
+  }
+
+  &__logo{
+    height: 40px;
+  }
+
+  &__menu{
+    display: none;
+    height: 3rem;
+    z-index: 1;
+    @media (max-width: 800px) {
+      display: block;
+    }
   }
 
   &__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     @media (max-width: 800px) {
+      // position: absolute;
       display: none;
     }
 
@@ -38,25 +53,36 @@
   }
 
   &__links {
+    height: 4rem;
     display: grid;
-    align-items: center;
-    justify-items: center;
+    place-content: center;
     width: 10rem;
-    text-decoration: none;
-    // padding: 1rem 3rem;
-    // margin: auto;
     &:hover {
       text-decoration: none;
       background-color: $orange-light;
-    // padding: auto;
     }
+  }
+  
+  &__mobile{
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    gap: 1rem;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    animation: 300ms pageLoad ease-in;
+  }
+  
+  &__lmobile{
+    background-color: $orange-light;
+    display: grid;
+    place-content: center;
+    height: 4rem;
+    width: 10rem;
   }
 }
 
-.logonav {
-height: 40px;
-display: grid;
-justify-content:left;
-// position: relative;
-// left: -2rem;
+.span3{
+  grid-column: span 3;
+  margin-left: 7rem;
 }
