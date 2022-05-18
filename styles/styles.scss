@@ -98,10 +98,22 @@ a {
   &--content1{
     top: 7.2rem;
     height: 21rem;
+    @media (max-width: 1050px) {
+      height: 26rem;
+    }
+    @media (max-width: 500px) {
+      top: 2.5rem;
+    }
   }
   &--content2{
     top: 7.2rem;
     height: 21rem;
+    @media (max-width: 1050px) {
+      height: 26rem;
+    }
+    @media (max-width: 500px) {
+      top: 2.5rem;
+    }
   }
   &--clients{
     height: 10rem;

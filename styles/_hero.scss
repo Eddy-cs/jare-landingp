@@ -107,12 +107,30 @@
       height: 63rem;
       top: 11rem;
       left: 15rem;
+      @media (max-width: 1300px) {  
+        height: 45.5rem;
+        top: 15rem;
+        }
+    
+        @media (max-width: 500px) {
+        height: 25.4rem;
+        top: 11rem;
+        } 
     }
     &--3{
       position: absolute;
       height: 70rem;
       top: 12rem;
       left: 20rem;
+      @media (max-width: 1300px) {  
+        height: 45.5rem;
+        top: 15rem;
+        }
+    
+        @media (max-width: 500px) {
+        height: 25.4rem;
+        top: 11rem;
+        } 
     }
   }
 

@@ -201,11 +201,39 @@
   left: 15rem;
 }
 
+@media (max-width: 1300px) {
+  .blob__mid--2 {
+    height: 45.5rem;
+    top: 15rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .blob__mid--2 {
+    height: 25.4rem;
+    top: 11rem;
+  }
+}
+
 .blob__mid--3 {
   position: absolute;
   height: 70rem;
   top: 12rem;
   left: 20rem;
+}
+
+@media (max-width: 1300px) {
+  .blob__mid--3 {
+    height: 45.5rem;
+    top: 15rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .blob__mid--3 {
+    height: 25.4rem;
+    top: 11rem;
+  }
 }
 
 .blob__front {
@@ -257,6 +285,12 @@
   gap: 2%;
 }
 
+@media (max-width: 1050px) {
+  .content {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 500px) {
   .content {
     display: block;
@@ -288,7 +322,7 @@
   .content__img--right {
     position: absolute;
     width: 96%;
-    top: 2rem;
+    top: 0rem;
     left: unset;
     right: -40%;
   }
@@ -303,14 +337,21 @@
   margin-top: 7.2rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1050px) {
   .content__text {
+    display: block;
     padding-left: 0;
   }
 }
 
 .content__tittle {
   grid-column: span 2;
+}
+
+@media (max-width: 500px) {
+  .content__tittle {
+    padding-bottom: 5rem;
+  }
 }
 
 .content__tittle::before {
@@ -370,6 +411,12 @@
   }
 }
 
+@media (max-width: 1050px) {
+  .content__icons {
+    margin-top: 5rem;
+  }
+}
+
 .content__icons::before {
   content: '';
   display: block;
@@ -404,11 +451,6 @@
 
 .content__icons--clip::before {
   background-image: url(/styles/image/icons/Clipboard.png);
-}
-
-.test {
-  position: relative;
-  width: 100%;
 }
 
 .footer {
@@ -885,9 +927,33 @@ a {
   height: 21rem;
 }
 
+@media (max-width: 1050px) {
+  .banner--content1 {
+    height: 26rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner--content1 {
+    top: 2.5rem;
+  }
+}
+
 .banner--content2 {
   top: 7.2rem;
   height: 21rem;
+}
+
+@media (max-width: 1050px) {
+  .banner--content2 {
+    height: 26rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner--content2 {
+    top: 2.5rem;
+  }
 }
 
 .banner--clients {
