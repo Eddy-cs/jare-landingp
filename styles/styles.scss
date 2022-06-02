@@ -15,16 +15,16 @@ html {
   // overflow-x: hidden;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-
-
-.overflow{
+.overflow {
   width: 100vw;
   overflow: hidden;
 }
@@ -55,7 +55,7 @@ h2 {
   font-size: 4.6rem;
   @media (max-width: 500px) {
     font-size: 3.6rem;
-}
+  }
 }
 
 h3 {
@@ -71,11 +71,11 @@ p {
   line-height: 2.8rem;
   @media (max-width: 500px) {
     font-size: 1.6rem;
-}
+  }
 }
 
 a {
-  font-size: 1.6rem ;
+  font-size: 1.6rem;
   color: black;
 }
 
@@ -89,14 +89,14 @@ a {
   // transform: translateX(-50%);
   left: 50%;
 
-  &--hero{
+  &--hero {
     top: 18rem;
     height: 31.5rem;
     @media (max-width: 850px) {
       top: 14rem;
     }
   }
-  &--content1{
+  &--content1 {
     top: 7.2rem;
     height: 21rem;
     @media (max-width: 1050px) {
@@ -106,7 +106,7 @@ a {
       top: 2.5rem;
     }
   }
-  &--content2{
+  &--content2 {
     top: 7.2rem;
     height: 21rem;
     @media (max-width: 1050px) {
@@ -116,13 +116,13 @@ a {
       top: 2.5rem;
     }
   }
-  &--clients{
+  &--clients {
     height: 10rem;
   }
-  &--prices{
+  &--prices {
     height: 23rem;
   }
-  &--footer{
-    height: 17rem;
+  &--footer {
+    height: 35rem;
   }
 }
