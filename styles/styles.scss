@@ -4,7 +4,6 @@
 @import "footer";
 @import "variables";
 @import "clients";
-@import "mixins";
 @import "prices";
 @import "animations";
 
@@ -69,6 +68,7 @@ h3 {
 p {
   font-size: 1.9rem;
   line-height: 2.8rem;
+  font-weight: 400;
   @media (max-width: 500px) {
     font-size: 1.6rem;
   }
@@ -123,6 +123,6 @@ a {
     height: 23rem;
   }
   &--footer {
-    height: 35rem;
+    height: 24rem;
   }
 }

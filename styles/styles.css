@@ -485,6 +485,7 @@
 }
 
 .footer {
+  color: #3c2d0f;
   position: relative;
   margin-top: 10rem;
   padding: 5rem 2.5% 0;
@@ -493,7 +494,6 @@
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem;
-  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -509,24 +509,25 @@
 .footer__contact {
   display: -ms-grid;
   display: grid;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
-.footer__contact div {
+.footer__contact p {
   margin-bottom: 2rem;
 }
 
 .footer__social {
   display: -ms-grid;
   display: grid;
-  margin-top: 3rem;
+  margin-top: 2rem;
   -ms-grid-columns: 1fr 1fr 1fr 3fr;
       grid-template-columns: 1fr 1fr 1fr 3fr;
 }
 
 .footer__about p {
+  text-align: justify;
   font-size: 1.5rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .clients {
@@ -924,6 +925,7 @@ h3 {
 p {
   font-size: 1.9rem;
   line-height: 2.8rem;
+  font-weight: 400;
 }
 
 @media (max-width: 500px) {
@@ -1002,6 +1004,6 @@ a {
 }
 
 .banner--footer {
-  height: 35rem;
+  height: 24rem;
 }
 /*# sourceMappingURL=styles.css.map */
