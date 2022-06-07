@@ -12,7 +12,7 @@
   @media (max-width: 500px) {
     display: block;
   }
-  &__container{
+  &__container {
     position: relative;
   }
 
@@ -20,17 +20,17 @@
     position: absolute;
     right: 0rem;
     // @media (max-width: 1000px) {
-      //   width: auto;
-      // }
+    //   width: auto;
+    // }
+    @media (max-width: 500px) {
+      width: 96%;
+      left: -40%;
+    }
+    &--right {
+      // overflow-x:visible;
+      position: relative;
+      left: -6rem;
       @media (max-width: 500px) {
-        width: 96%;
-        left: -40%;
-      }
-      &--right {
-        // overflow-x:visible;
-        position: relative;
-        left: -6rem;
-        @media (max-width: 500px) {
         position: absolute;
         width: 96%;
         top: 0rem;
@@ -46,18 +46,18 @@
     gap: 5rem;
     margin-top: 7.2rem;
     @media (max-width: 1050px) {
-    display: block;
-    padding-left: 0;
+      display: block;
+      padding-left: 0;
     }
   }
 
-  &__tittle{
+  &__tittle {
     grid-column: span 2;
     @media (max-width: 500px) {
       padding-bottom: 5rem;
     }
-    &::before{
-      content: 'Lorem ipsum, dolor sit amet';
+    &::before {
+      content: "Redes Sociales";
       font-size: 1.6rem;
       display: block;
       margin-top: 2rem;
@@ -68,9 +68,9 @@
         margin-bottom: 1rem;
       }
     }
-    &::after{
+    &::after {
       margin-top: 2rem;
-      content: 'Facilita la manera en la que trabajas al dejar el trabajo de publicidad en nuestras manos';
+      content: "Facilita la manera en la que trabajas al poner el trabajo de publicidad en nuestras manos";
       font-size: 1.9rem;
       display: block;
       @media (max-width: 500px) {
@@ -82,58 +82,57 @@
     @media (max-width: 500px) {
       padding-top: 2rem;
       margin-bottom: 5rem;
-      &--left{
+      &--left {
         padding-left: 40%;
-        &::after{
+        &::after {
           padding-left: 35%;
         }
       }
-      &--right{
+      &--right {
         padding-right: 40%;
-        &::after{
+        &::after {
           padding-right: 25%;
         }
-
       }
     }
   }
-  &__icons{
+  &__icons {
     @media (max-width: 500px) {
-    margin: 0 3rem;
-    grid-column: span 2;
+      margin: 0 3rem;
+      grid-column: span 2;
     }
     @media (max-width: 1050px) {
       margin-top: 5rem;
-      }
+    }
     // @media (max-width: 500px) {
     //   margin-top: 10rem;
     //   }
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       display: block;
       background-image: url(/styles/image/icons/Lightbulb-alt.png);
       background-repeat: no-repeat;
       height: 7rem;
     }
-    &--pie::before{
+    &--pie::before {
       background-image: url(/styles/image/icons/Chart-pie.png);
     }
-    &--invoice::before{
+    &--invoice::before {
       background-image: url(/styles/image/icons/Invoice.png);
     }
-    &--flask::before{
+    &--flask::before {
       background-image: url(/styles/image/icons/Flask-alt.png);
     }
-    &--edit::before{
+    &--edit::before {
       background-image: url(/styles/image/icons/Edit.png);
     }
-    &--file::before{
+    &--file::before {
       background-image: url(/styles/image/icons/File-user.png);
     }
-    &--print::before{
+    &--print::before {
       background-image: url(/styles/image/icons/Printer.png);
     }
-    &--clip::before{
+    &--clip::before {
       background-image: url(/styles/image/icons/Clipboard.png);
     }
   }

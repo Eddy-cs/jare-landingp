@@ -50,12 +50,12 @@
   height: 40px;
   margin-left: auto;
   background-color: #ffffff;
-  border: 3px solid #F5A302;
+  border: 3px solid #f5a302;
   padding-inline: 20px;
 }
 
 .navbar__button:hover {
-  border-color: #FBCF79;
+  border-color: #fbcf79;
 }
 
 .navbar__links {
@@ -156,7 +156,7 @@
   font-size: 1.6rem;
   height: 5.7rem;
   width: 28rem;
-  background-color: #FDC80E;
+  background-color: #fdc80e;
   border: none;
   margin-left: 3rem;
 }
@@ -169,7 +169,7 @@
 }
 
 .hero__button:hover {
-  background-color: #FBCF79;
+  background-color: #fbcf79;
 }
 
 .hero__description {
@@ -386,7 +386,7 @@
 }
 
 .content__tittle::before {
-  content: 'Lorem ipsum, dolor sit amet';
+  content: "Redes Sociales";
   font-size: 1.6rem;
   display: block;
   margin-top: 2rem;
@@ -403,7 +403,7 @@
 
 .content__tittle::after {
   margin-top: 2rem;
-  content: 'Facilita la manera en la que trabajas al dejar el trabajo de publicidad en nuestras manos';
+  content: "Facilita la manera en la que trabajas al poner el trabajo de publicidad en nuestras manos";
   font-size: 1.9rem;
   display: block;
 }
@@ -449,7 +449,7 @@
 }
 
 .content__icons::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/styles/image/icons/Lightbulb-alt.png);
   background-repeat: no-repeat;
@@ -706,7 +706,7 @@
 
 .prices__button:hover {
   text-decoration: none;
-  background-color: #FDC80E;
+  background-color: #fdc80e;
 }
 
 .prices__card {
@@ -941,7 +941,7 @@ a {
 
 .banner {
   position: absolute;
-  background-color: #FDC80E;
+  background-color: #fdc80e;
   height: 21rem;
   width: 100vw;
   z-index: -3;
