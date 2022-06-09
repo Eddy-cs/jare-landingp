@@ -46,9 +46,22 @@
     background-color: #ffffff;
     border: 3px solid $orange-strong;
     padding-inline: 20px;
+    &--shorttxt{
+      display: none;
+      @media (max-width: 500px) {
+      display: block;
+        // font-size: 1rem;
+      }
+    }
+    &--longtxt{
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
     
     &:hover {
     border-color: $orange-opaque;
+    
       }
   }
 

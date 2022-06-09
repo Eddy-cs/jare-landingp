@@ -54,6 +54,22 @@
   padding-inline: 20px;
 }
 
+.navbar__button--shorttxt {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .navbar__button--shorttxt {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar__button--longtxt {
+    display: none;
+  }
+}
+
 .navbar__button:hover {
   border-color: #fbcf79;
 }
