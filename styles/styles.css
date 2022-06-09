@@ -107,7 +107,7 @@
 @media (max-width: 850px) {
   .hero {
     display: block;
-    height: auto;
+    margin-bottom: 8rem;
   }
 }
 
@@ -207,63 +207,70 @@
 
 .blob__mid {
   position: absolute;
-  height: 54.7rem;
-  top: 17rem;
+  height: 60rem;
+  top: 12rem;
+  left: -5rem;
 }
 
 @media (max-width: 1300px) {
   .blob__mid {
-    height: 45.5rem;
-    top: 15rem;
+    height: 50rem;
+    top: 10.5rem;
+    right: -15rem;
   }
 }
 
 @media (max-width: 500px) {
   .blob__mid {
-    height: 25.4rem;
-    top: 11rem;
+    height: 28rem;
+    top: 9rem;
+    left: -2rem;
   }
 }
 
 .blob__mid--2 {
   position: absolute;
-  height: 63rem;
+  height: 65rem;
   top: 11rem;
   left: 15rem;
 }
 
 @media (max-width: 1300px) {
   .blob__mid--2 {
-    height: 45.5rem;
-    top: 15rem;
+    height: 54rem;
+    top: 9rem;
+    left: 12rem;
   }
 }
 
 @media (max-width: 500px) {
   .blob__mid--2 {
-    height: 25.4rem;
-    top: 11rem;
+    height: 30rem;
+    top: 8rem;
+    left: 7rem;
   }
 }
 
 .blob__mid--3 {
   position: absolute;
-  height: 70rem;
-  top: 12rem;
-  left: 20rem;
+  height: 75rem;
+  top: 10rem;
+  left: 16rem;
 }
 
 @media (max-width: 1300px) {
   .blob__mid--3 {
-    height: 45.5rem;
-    top: 15rem;
+    height: 62rem;
+    top: 9.5rem;
+    left: 13rem;
   }
 }
 
 @media (max-width: 500px) {
   .blob__mid--3 {
-    height: 25.4rem;
-    top: 11rem;
+    height: 34rem;
+    left: 8rem;
+    top: 8rem;
   }
 }
 
@@ -285,7 +292,7 @@
 @media (max-width: 500px) {
   .blob__front {
     height: 12.1rem;
-    top: 33rem;
+    top: 33.4rem;
     left: 5.6rem;
   }
 }
@@ -339,8 +346,8 @@
 
 @media (max-width: 500px) {
   .content__img {
-    width: 96%;
-    left: -40%;
+    height: 32rem;
+    right: 48%;
   }
 }
 
@@ -352,10 +359,10 @@
 @media (max-width: 500px) {
   .content__img--right {
     position: absolute;
-    width: 96%;
+    width: 34rem;
     top: 0rem;
     left: unset;
-    right: -40%;
+    left: 40%;
   }
 }
 
@@ -366,12 +373,14 @@
       grid-template-columns: 1fr 1fr;
   gap: 5rem;
   margin-top: 7.2rem;
+  max-height: 70rem;
 }
 
 @media (max-width: 1050px) {
   .content__text {
     display: block;
     padding-left: 0;
+    max-height: none;
   }
 }
 
