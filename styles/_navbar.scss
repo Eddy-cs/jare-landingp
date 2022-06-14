@@ -29,15 +29,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     @media (max-width: 800px) {
-      // position: absolute;
       display: none;
     }
-
-    // &--hiden{
-    //   @media (max-width: 800px) {
-    //     display: block;
-      // }
-    // }
   }
 
   &__button {
@@ -50,7 +43,6 @@
       display: none;
       @media (max-width: 500px) {
       display: block;
-        // font-size: 1rem;
       }
     }
     &--longtxt{

@@ -49,7 +49,6 @@
     align-items: center;
     gap: 2%;
     grid-template-columns: repeat(5, 1fr);
-    ///temporal
     @media (max-width: 1200px) {
         grid-template-columns: 1fr 1fr;
         gap: 5rem;
@@ -63,10 +62,8 @@
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    /// temporal
     @media (max-width: 1200px) {
         grid-template-columns: 1fr;
         gap: 5rem;
-        // margin-top: 0rem;
     }
 }
