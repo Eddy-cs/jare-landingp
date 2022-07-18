@@ -87,6 +87,9 @@ a {
     @media (max-width: 850px) {
       top: 14rem;
     }
+    @media (max-width: 500px) {
+      top: 12rem;
+    }
   }
   &--content1 {
     top: 7.2rem;
@@ -113,8 +116,5 @@ a {
   }
   &--prices {
     height: 23rem;
-  }
-  &--footer {
-    height: 24rem;
   }
 }

@@ -9,14 +9,15 @@
   border-radius: 3rem;
   z-index: 1;
   @media (max-width: 800px) {
-    grid-template-columns: 5% 5% 1fr;;
+    gap: 1rem;
+    grid-template-columns: 0.5fr 0.5fr 9fr;
   }
 
-  &__logo{
+  &__logo {
     height: 40px;
   }
 
-  &__menu{
+  &__menu {
     display: none;
     height: 3rem;
     z-index: 1;
@@ -25,7 +26,7 @@
     }
   }
 
-  &__container{
+  &__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     @media (max-width: 800px) {
@@ -39,22 +40,21 @@
     background-color: #ffffff;
     border: 3px solid $orange-strong;
     padding-inline: 20px;
-    &--shorttxt{
+    &--shorttxt {
       display: none;
       @media (max-width: 500px) {
-      display: block;
+        display: block;
       }
     }
-    &--longtxt{
-    @media (max-width: 500px) {
-      display: none;
+    &--longtxt {
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
-  }
-    
+
     &:hover {
-    border-color: $orange-opaque;
-    
-      }
+      border-color: $orange-opaque;
+    }
   }
 
   &__links {
@@ -67,18 +67,18 @@
       background-color: $orange-light;
     }
   }
-  
-  &__mobile{
+
+  &__mobile {
     position: absolute;
-    top: 2rem;
-    left: 5rem;
+    top: 4rem;
+    left: 10%;
     gap: 1rem;
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
     animation: 300ms pageLoad ease-in;
   }
-  
-  &__lmobile{
+
+  &__lmobile {
     background-color: $orange-light;
     display: grid;
     place-content: center;
@@ -87,7 +87,7 @@
   }
 }
 
-.span3{
+.span3 {
   grid-column: span 3;
   margin-left: 7rem;
 }

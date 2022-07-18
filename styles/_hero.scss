@@ -9,34 +9,34 @@
     margin-bottom: 8rem;
   }
 
-  
   &__right {
     position: relative;
     @media (max-width: 850px) {
       height: 70rem;
-        }
+    }
     @media (max-width: 500px) {
       height: 40rem;
-        }
     }
+  }
 
-  
   &__title {
     height: 31.5rem;
-    margin-top: 9rem;
-    padding-top: 5rem;
+    margin-top: 14rem;
+    // padding-top: 5rem;
     @media (max-width: 1100px) {
-      margin-top: 7rem;
+      margin-top: 12rem;
       font-size: 5.8rem;
     }
     @media (max-width: 850px) {
-      margin-top: 5rem;
+      margin-top: 10rem;
     }
     @media (max-width: 500px) {
+      // padding-top: 5rem;
+      margin-top: 7rem;
       font-size: 4.8rem;
     }
   }
-  
+
   &__button {
     font-size: 1.6rem;
     height: 5.7rem;
@@ -47,26 +47,25 @@
     @media (max-width: 1100px) {
       height: 4rem;
       width: 20rem;
-
     }
-    
+
     &:hover {
       background-color: $orange-opaque;
     }
   }
-  
+
   &__description {
     margin: 2.5rem 0rem;
   }
 }
 
-.lg--text{
+.lg--text {
   @media (max-width: 1100px) {
     display: none;
   }
 }
 
-.sm--text{
+.sm--text {
   @media (min-width: 1100px) {
     display: none;
   }
@@ -90,50 +89,50 @@
     top: 12rem;
     left: -5rem;
 
-    @media (max-width: 1300px) {  
-    height: 50rem;
-    top: 10.5rem;
-    right: -15rem;
+    @media (max-width: 1300px) {
+      height: 50rem;
+      top: 10.5rem;
+      right: -15rem;
     }
 
     @media (max-width: 500px) {
-    height: 28rem;
-    top: 9rem;
-    left: -2rem;
-    } 
-    &--2{
+      height: 28rem;
+      top: 9rem;
+      left: -2rem;
+    }
+    &--2 {
       position: absolute;
       height: 65rem;
       top: 11rem;
       left: 15rem;
-      @media (max-width: 1300px) {  
+      @media (max-width: 1300px) {
         height: 54rem;
         top: 9rem;
         left: 12rem;
-        }
-    
-        @media (max-width: 500px) {
+      }
+
+      @media (max-width: 500px) {
         height: 30rem;
         top: 8rem;
         left: 7rem;
-        } 
+      }
     }
-    &--3{
+    &--3 {
       position: absolute;
       height: 75rem;
       top: 10rem;
       left: 16rem;
-      @media (max-width: 1300px) {  
+      @media (max-width: 1300px) {
         height: 62rem;
         top: 9.5rem;
         left: 13rem;
-        }
-    
-        @media (max-width: 500px) {
+      }
+
+      @media (max-width: 500px) {
         height: 34rem;
         left: 8rem;
         top: 8rem;
-        } 
+      }
     }
   }
 
@@ -148,12 +147,12 @@
       top: 55rem;
       left: 10.1rem;
     }
-    
+
     @media (max-width: 500px) {
       height: 12.1rem;
       top: 33.4rem;
       left: 5.6rem;
-    } 
+    }
   }
 }
 
@@ -165,4 +164,3 @@
     height: 15rem;
   }
 }
-
