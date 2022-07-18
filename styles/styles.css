@@ -689,13 +689,13 @@
 }
 
 .prices__container {
-  padding-top: 8.4rem;
   display: -ms-grid;
   display: grid;
+  justify-items: center;
+  padding-top: 8.4rem;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  justify-items: center;
 }
 
 @media (max-width: 1300px) {
@@ -703,7 +703,6 @@
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     row-gap: 10rem;
-    padding: 10%;
   }
 }
 
@@ -711,6 +710,7 @@
   .prices__container {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+    padding: 10% 0;
   }
 }
 
