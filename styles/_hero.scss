@@ -1,6 +1,7 @@
 @import "variables";
 
 .hero {
+  margin-top: -3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -22,18 +23,27 @@
   &__title {
     height: 31.5rem;
     margin-top: 14rem;
-    // padding-top: 5rem;
-    @media (max-width: 1100px) {
-      margin-top: 12rem;
-      font-size: 5.8rem;
+    margin-left: -4rem;
+    color: white;
+
+    &--big {
+      font-size: 9.2rem;
+    }
+
+    @media (max-width: 1400px) {
+      margin-top: 12.5rem;
+      line-height: 100%;
+      display: grid;
+      margin-left: 10rem;
+      span {
+        margin-left: -10rem;
+      }
     }
     @media (max-width: 850px) {
-      margin-top: 10rem;
+      margin-top: 8.5rem;
     }
     @media (max-width: 500px) {
-      // padding-top: 5rem;
       margin-top: 7rem;
-      font-size: 4.8rem;
     }
   }
 
@@ -55,7 +65,7 @@
   }
 
   &__description {
-    margin: 2.5rem 0rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -161,6 +171,6 @@
   display: flex;
   align-items: center;
   @media (max-width: 1300px) {
-    height: 15rem;
+    height: 17rem;
   }
 }
