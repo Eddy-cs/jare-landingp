@@ -125,6 +125,11 @@
 .hero__title--big {
   font-size: 9.2rem;
 }
+@media (max-width: 500px) {
+  .hero__title--big {
+    font-size: 8rem;
+  }
+}
 @media (max-width: 1400px) {
   .hero__title {
     margin-top: 12.5rem;
@@ -143,7 +148,11 @@
 }
 @media (max-width: 500px) {
   .hero__title {
-    margin-top: 7rem;
+    margin-top: 7.5rem;
+    margin-left: 4rem;
+  }
+  .hero__title span {
+    margin-left: -4rem;
   }
 }
 .hero__button {
@@ -367,7 +376,7 @@
   }
 }
 .content__tittle::after {
-  margin-top: 2rem;
+  margin-top: 1rem;
   content: "Somos tu aliado estratégico al momento de comunicarte con tu público objetivo a través de los siguientes servicios.";
   font-size: 1.9rem;
   font-weight: 100;
@@ -375,9 +384,7 @@
 }
 @media (max-width: 500px) {
   .content__tittle::after {
-    margin-top: 2rem;
     font-size: 1.5rem;
-    margin: 3rem 0 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -775,9 +782,14 @@ h2 {
   font-size: 4.6rem;
   font-family: "Akshar", sans-serif;
 }
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   h2 {
     font-size: 3.6rem;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 3rem;
   }
 }
 
@@ -834,9 +846,9 @@ a {
   top: 7.2rem;
   height: 21rem;
 }
-@media (max-width: 1050px) {
+@media (max-width: 920px) {
   .banner--content1 {
-    height: 26rem;
+    height: 28.5rem;
   }
 }
 @media (max-width: 500px) {
@@ -848,9 +860,9 @@ a {
   top: 7.2rem;
   height: 21rem;
 }
-@media (max-width: 1050px) {
+@media (max-width: 920px) {
   .banner--content2 {
-    height: 26rem;
+    height: 28.5rem;
   }
 }
 @media (max-width: 500px) {

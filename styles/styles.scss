@@ -54,8 +54,11 @@ h1 span{
 h2 {
   font-size: 4.6rem;
   font-family: 'Akshar', sans-serif;
-  @media (max-width: 500px) {
+  @media (max-width: 1200px) {
     font-size: 3.6rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 3rem;
   }
 }
 
@@ -103,8 +106,8 @@ a {
   &--content1 {
     top: 7.2rem;
     height: 21rem;
-    @media (max-width: 1050px) {
-      height: 26rem;
+    @media (max-width: 920px) {
+      height: 28.5rem;
     }
     @media (max-width: 500px) {
       top: 2.5rem;
@@ -113,8 +116,8 @@ a {
   &--content2 {
     top: 7.2rem;
     height: 21rem;
-    @media (max-width: 1050px) {
-      height: 26rem;
+    @media (max-width: 920px) {
+      height: 28.5rem;
     }
     @media (max-width: 500px) {
       top: 2.5rem;

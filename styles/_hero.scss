@@ -28,6 +28,9 @@
 
     &--big {
       font-size: 9.2rem;
+      @media (max-width: 500px) {
+        font-size: 8rem;
+      }
     }
 
     @media (max-width: 1400px) {
@@ -43,7 +46,11 @@
       margin-top: 8.5rem;
     }
     @media (max-width: 500px) {
-      margin-top: 7rem;
+      margin-top: 7.5rem;
+      margin-left: 4rem;
+      span {
+        margin-left: -4rem;
+      }
     }
   }
 

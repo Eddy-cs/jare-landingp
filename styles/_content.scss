@@ -68,15 +68,13 @@
       }
     }
     &::after {
-      margin-top: 2rem;
+      margin-top: 1rem;
       content: "Somos tu aliado estratégico al momento de comunicarte con tu público objetivo a través de los siguientes servicios.";
       font-size: 1.9rem;
       font-weight: 100;
       display: block;
       @media (max-width: 500px) {
-        margin-top: 2rem;
         font-size: 1.5rem;
-        margin: 3rem 0 2rem;
       }
     }
     @media (max-width: 500px) {
