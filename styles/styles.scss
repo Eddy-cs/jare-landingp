@@ -126,4 +126,10 @@ a {
   &--prices {
     height: 23rem;
   }
+  &--footer {
+    height: 20rem;
+    @media (max-width: 800px) {
+      height: 25rem;
+    }
+  }
 }
