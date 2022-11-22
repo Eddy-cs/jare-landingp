@@ -1,14 +1,15 @@
 @import "variables";
 
 .prices {
-  position: relative;
+  // position: relative;
   &__container {
     display: grid;
-    justify-items: center;
     padding-top: 8.4rem;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     gap: 2rem;
     @media (max-width: 1300px) {
+
       grid-template-columns: 1fr 1fr;
       row-gap: 10rem;
     }
@@ -21,14 +22,15 @@
     padding: 1.6rem 2.6rem;
     display: grid;
     height: 59.4rem;
-    max-width: 30.2rem;
-    min-width: 28rem;
+    width: 30.2rem;
     background-color: white;
     border-radius: 24px;
     box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.26);
   }
   &__price {
     font-size: 3.7rem;
+    font-weight: bold;
+    color: #9F9F9F;
   }
   &__description {
     font-size: 1.5rem;

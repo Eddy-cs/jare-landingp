@@ -49,15 +49,18 @@
 
   &__tittle {
     grid-column: span 2;
+    color: white;
+
     @media (max-width: 500px) {
       padding-bottom: 5rem;
     }
     &::before {
-      content: "Redes Sociales";
-      font-size: 1.6rem;
+      content: "Comunica desde la verdad";
+      font-size: 2rem;
+      font-weight: 100;
       display: block;
       margin-top: 2rem;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       @media (max-width: 500px) {
         font-size: 1.4rem;
         padding-left: 0%;
@@ -65,14 +68,13 @@
       }
     }
     &::after {
-      margin-top: 2rem;
-      content: "Facilita la manera en la que trabajas al poner el trabajo de publicidad en nuestras manos";
+      margin-top: 1rem;
+      content: "Somos tu aliado estratégico al momento de comunicarte con tu público objetivo a través de los siguientes servicios.";
       font-size: 1.9rem;
+      font-weight: 100;
       display: block;
       @media (max-width: 500px) {
-        margin-top: 2rem;
         font-size: 1.5rem;
-        margin: 3rem 0 2rem;
       }
     }
     @media (max-width: 500px) {

@@ -1,6 +1,3 @@
-// let sprints = Array.from(document.querySelectorAll('.sprint'))
-// addEventListener("onClick" )
-
 let sprints = [...document.querySelectorAll(".sprint")];
 let time = 3000;
 let imageCounter = 0;
@@ -21,7 +18,6 @@ let menu = document.querySelector(".navbar__menu");
 let links = document.querySelector(".navbar__mobile");
 
 menu.addEventListener("click", () => {
-  //   console.log(links.style.display);
   links.style.display === "none"
     ? (links.style.display = "grid")
     : (links.style.display = "none");
