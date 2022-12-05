@@ -198,6 +198,9 @@
     margin-left: -4rem;
   }
 }
+.hero__description {
+  margin: 1.5rem 0;
+}
 .hero__button {
   font-size: 1.6rem;
   height: 5.7rem;
@@ -205,11 +208,28 @@
   background-color: #F6B645;
   border: none;
   margin-left: 3rem;
+  transition: 0.3s;
 }
 @media (max-width: 1100px) {
   .hero__button {
-    height: 4rem;
-    width: 20rem;
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  .hero__button {
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    padding: 1.5rem 0;
+    max-width: 50rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero__button {
+    margin: 0 auto;
+    height: auto;
+    padding: 1.5rem 0;
+    width: 100%;
   }
 }
 .hero__button:hover {
@@ -324,13 +344,24 @@
 }
 
 .brand {
-  height: 20rem;
+  height: 15rem;
+  width: auto;
   display: flex;
   align-items: center;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
   .brand {
     height: 17rem;
+  }
+}
+@media (max-width: 500px) {
+  .brand {
+    height: 8rem;
+  }
+}
+@media (max-width: 500px) {
+  .brand img {
+    display: none;
   }
 }
 
