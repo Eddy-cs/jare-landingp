@@ -37,7 +37,7 @@
   &__text {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    gap: 4rem;
     margin-top: 7.2rem;
     max-height: 70rem;
     @media (max-width: 1050px) {
@@ -50,10 +50,10 @@
   &__tittle {
     grid-column: span 2;
     color: white;
-
     @media (max-width: 500px) {
-      padding-bottom: 5rem;
-    }
+      height: 29rem;
+      }
+    
     &::before {
       content: "Comunica desde la verdad";
       font-size: 2rem;
@@ -95,40 +95,44 @@
     }
   }
   &__icons {
+    margin: 1rem 0rem;
+    // margin-top: 1rem;
+    
     @media (max-width: 500px) {
-      margin: 0 3rem;
+      margin: 1rem 3rem;
       grid-column: span 2;
     }
     @media (max-width: 1050px) {
       margin-top: 5rem;
+      margin-bottom: 0;
     }
     &::before {
       content: "";
       display: block;
-      background-image: url(/styles/image/icons/Lightbulb-alt.png);
+      background-image: url(/styles/image/icons/Lightbulb-alt.svg);
       background-repeat: no-repeat;
-      height: 7rem;
+      height: 6rem;
     }
     &--pie::before {
-      background-image: url(/styles/image/icons/Chart-pie.png);
+      background-image: url(/styles/image/icons/Chart-pie.svg);
     }
     &--invoice::before {
-      background-image: url(/styles/image/icons/Invoice.png);
+      background-image: url(/styles/image/icons/Invoice.svg);
     }
     &--flask::before {
-      background-image: url(/styles/image/icons/Flask-alt.png);
+      background-image: url(/styles/image/icons/Flask-alt.svg);
     }
     &--edit::before {
-      background-image: url(/styles/image/icons/Edit.png);
+      background-image: url(/styles/image/icons/Edit.svg);
     }
     &--file::before {
-      background-image: url(/styles/image/icons/File-user.png);
+      background-image: url(/styles/image/icons/File-user.svg);
     }
     &--print::before {
-      background-image: url(/styles/image/icons/Printer.png);
+      background-image: url(/styles/image/icons/Printer.svg);
     }
     &--clip::before {
-      background-image: url(/styles/image/icons/Clipboard.png);
+      background-image: url(/styles/image/icons/Clipboard-alt.svg);
     }
   }
 }

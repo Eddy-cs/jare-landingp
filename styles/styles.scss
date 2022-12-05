@@ -8,6 +8,8 @@
 @import "animations";
 
 html {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
@@ -22,6 +24,7 @@ html {
   
 }
 
+
 .overflow {
   width: 100vw;
   overflow: hidden;
@@ -35,6 +38,7 @@ html {
 
 .wrapper {
   margin: auto;
+  width: 100vw;
   max-width: 140rem;
   min-width: 35rem;
   padding: 0 4%;

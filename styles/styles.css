@@ -461,7 +461,7 @@
 .content__text {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 4rem;
   margin-top: 7.2rem;
   max-height: 70rem;
 }
@@ -478,7 +478,7 @@
 }
 @media (max-width: 500px) {
   .content__tittle {
-    padding-bottom: 5rem;
+    height: 29rem;
   }
 }
 .content__tittle::before {
@@ -526,44 +526,48 @@
     padding-right: 25%;
   }
 }
+.content__icons {
+  margin: 1rem 0rem;
+}
 @media (max-width: 500px) {
   .content__icons {
-    margin: 0 3rem;
+    margin: 1rem 3rem;
     grid-column: span 2;
   }
 }
 @media (max-width: 1050px) {
   .content__icons {
     margin-top: 5rem;
+    margin-bottom: 0;
   }
 }
 .content__icons::before {
   content: "";
   display: block;
-  background-image: url(/styles/image/icons/Lightbulb-alt.png);
+  background-image: url(/styles/image/icons/Lightbulb-alt.svg);
   background-repeat: no-repeat;
-  height: 7rem;
+  height: 6rem;
 }
 .content__icons--pie::before {
-  background-image: url(/styles/image/icons/Chart-pie.png);
+  background-image: url(/styles/image/icons/Chart-pie.svg);
 }
 .content__icons--invoice::before {
-  background-image: url(/styles/image/icons/Invoice.png);
+  background-image: url(/styles/image/icons/Invoice.svg);
 }
 .content__icons--flask::before {
-  background-image: url(/styles/image/icons/Flask-alt.png);
+  background-image: url(/styles/image/icons/Flask-alt.svg);
 }
 .content__icons--edit::before {
-  background-image: url(/styles/image/icons/Edit.png);
+  background-image: url(/styles/image/icons/Edit.svg);
 }
 .content__icons--file::before {
-  background-image: url(/styles/image/icons/File-user.png);
+  background-image: url(/styles/image/icons/File-user.svg);
 }
 .content__icons--print::before {
-  background-image: url(/styles/image/icons/Printer.png);
+  background-image: url(/styles/image/icons/Printer.svg);
 }
 .content__icons--clip::before {
-  background-image: url(/styles/image/icons/Clipboard.png);
+  background-image: url(/styles/image/icons/Clipboard-alt.svg);
 }
 
 .footer {
@@ -857,6 +861,8 @@
 }
 
 html {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
@@ -883,6 +889,7 @@ html {
 
 .wrapper {
   margin: auto;
+  width: 100vw;
   max-width: 140rem;
   min-width: 35rem;
   padding: 0 4%;
