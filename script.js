@@ -17,8 +17,19 @@ function imageSlide() {
 let menu = document.querySelector(".navbar__menu");
 let links = document.querySelector(".navbar__mobile");
 
+var icon = document.getElementById("icon");
+var icon1 = document.getElementById("a");
+var icon2 = document.getElementById("b");
+var icon3 = document.getElementById("c");
+
 menu.addEventListener("click", () => {
   links.style.display === "none"
     ? (links.style.display = "grid")
     : (links.style.display = "none");
+});
+
+icon.addEventListener("click", function () {
+  icon1.classList.toggle("a");
+  icon2.classList.toggle("c");
+  icon3.classList.toggle("b");
 });

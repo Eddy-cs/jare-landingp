@@ -92,6 +92,49 @@
   margin-left: 7rem;
 }
 
+.icon-1, .icon-2, .icon-3 {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  width: 23px;
+  height: 2px;
+  background-color: black;
+  transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
+  border-radius: 1rem;
+}
+
+.icon-1 {
+  transform: translateY(-8px);
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.icon-3 {
+  transform: translateY(8px);
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.hamburger-icon {
+  position: relative;
+  height: 47px;
+  width: 47px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-1.a {
+  transform: rotate(40deg);
+}
+
+.icon-3.b {
+  transform: rotate(-40deg);
+}
+
+.icon-2.c {
+  opacity: 0;
+}
+
 .hero {
   margin-top: -3rem;
   display: grid;
