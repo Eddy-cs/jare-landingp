@@ -44,11 +44,20 @@ h1 {
   font-size: 4.5rem;
   font-family: 'Akshar', sans-serif !important;
   font-weight: 400;
+  @media (max-width: 850px) {
+    font-size: 3.5rem;
+    line-height: 150%;
+
+  }
 }
 
 h1 span{
   font-weight: 700;
   font-size: 7rem;
+  margin-top: 2rem;
+  @media (max-width: 850px) {
+    font-size: 5rem;
+  }
 }
 
 h2 {
@@ -98,6 +107,7 @@ a {
     height: 31.5rem;
     @media (max-width: 850px) {
       top: 11rem;
+      height: 25rem;
     }
     @media (max-width: 500px) {
       top: 10rem;
