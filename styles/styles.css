@@ -136,14 +136,8 @@
 }
 
 .hero {
-  margin-top: 7rem;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-}
-@media (max-width: 1100px) {
-  .hero {
-    grid-template-columns: 1fr 1fr;
-  }
+  grid-template-columns: 50% 50%;
 }
 @media (max-width: 850px) {
   .hero {
@@ -158,49 +152,50 @@
 }
 .hero__right {
   position: relative;
-}
-@media (max-width: 850px) {
-  .hero__right {
-    height: 70rem;
-  }
+  z-index: -1;
+  height: 30rem;
 }
 @media (max-width: 500px) {
   .hero__right {
     height: 40rem;
   }
 }
-.hero__title {
-  height: 31.5rem;
-  padding: 4rem 0;
-  margin: 0 auto;
-  margin-left: -4rem;
-  color: white;
-  overflow: visible;
+.hero__left {
+  display: grid;
+  grid-template-rows: 3fr 1.5fr 1.5fr;
 }
-.hero__title--big {
-  font-size: 9.2rem;
+@media (max-width: 1100px) {
+  .hero__left {
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+    padding: 2rem;
+  }
 }
 @media (max-width: 850px) {
-  .hero__title--big {
-    font-size: 6rem;
+  .hero__left {
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+    place-content: center;
+    padding: 2rem;
   }
+}
+.hero__title {
+  color: rgb(0, 0, 0);
+  padding: 4rem 0;
+  height: 31.5rem;
+  line-height: 118%;
+  display: grid;
+  grid-auto-flow: row;
+  z-index: 10;
 }
 @media (max-width: 1100px) {
   .hero__title {
-    padding: 2rem 0;
-    line-height: 100%;
-    display: grid;
-    margin-left: 10rem;
-  }
-  .hero__title span {
-    margin-left: -10rem;
+    min-width: 385px;
   }
 }
 @media (max-width: 850px) {
   .hero__title {
     display: block;
     height: 25rem;
-    padding: 4rem 0;
+    padding: 8rem 0;
     margin: 0 auto;
     width: 100%;
     margin-left: 4rem;
@@ -225,7 +220,12 @@
   }
 }
 .hero__description {
-  margin: 1.5rem 0;
+  padding: 5rem 0 0 0;
+}
+@media (max-width: 1100px) {
+  .hero__description {
+    padding: 0;
+  }
 }
 .hero__button {
   font-size: 1.6rem;
@@ -276,37 +276,32 @@
 
 .blob {
   position: absolute;
-  top: -5rem;
+  height: 70rem;
 }
 @media (max-width: 1100px) {
   .blob {
-    height: 71.4rem;
+    height: 65rem;
   }
 }
 @media (max-width: 850px) {
   .blob {
     z-index: index -1;
-    top: 1rem;
   }
 }
 @media (max-width: 500px) {
   .blob {
-    top: 0rem;
     margin-left: 0.7rem;
     height: 40rem;
   }
 }
 .blob__mid {
   position: absolute;
-  height: 60rem;
-  top: 1rem;
+  height: 53rem;
   left: -5rem;
 }
 @media (max-width: 1100px) {
   .blob__mid {
-    height: 50rem;
-    top: 1rem;
-    right: -15rem;
+    height: 48rem;
   }
 }
 @media (max-width: 850px) {
@@ -317,19 +312,17 @@
 @media (max-width: 500px) {
   .blob__mid {
     height: 28rem;
-    top: 4rem;
     left: -2rem;
   }
 }
 .blob__mid--2 {
   position: absolute;
-  height: 65rem;
+  height: 60rem;
   left: 15rem;
 }
 @media (max-width: 1100px) {
   .blob__mid--2 {
-    height: 54rem;
-    left: 12rem;
+    height: 55rem;
   }
 }
 @media (max-width: 850px) {
@@ -346,13 +339,12 @@
 }
 .blob__mid--3 {
   position: absolute;
-  height: 75rem;
+  height: 60rem;
   left: 16rem;
 }
 @media (max-width: 1100px) {
   .blob__mid--3 {
-    height: 62rem;
-    left: 13rem;
+    height: 55rem;
   }
 }
 @media (max-width: 850px) {
@@ -370,14 +362,14 @@
 .blob__front {
   position: absolute;
   z-index: 3;
-  top: 55.4rem;
-  left: 12rem;
+  top: 46.1rem;
+  left: 8.5rem;
+  height: 24.5rem;
 }
 @media (max-width: 1100px) {
   .blob__front {
-    height: 21.6rem;
-    top: 45.2rem;
-    left: 10.1rem;
+    height: 19.5rem;
+    left: 9.5rem;
   }
 }
 @media (max-width: 850px) {
@@ -394,15 +386,9 @@
 }
 
 .brand {
-  height: 15rem;
-  width: auto;
   display: flex;
   align-items: center;
-}
-@media (max-width: 1100px) {
-  .brand {
-    height: 17rem;
-  }
+  max-width: 626px;
 }
 @media (max-width: 500px) {
   .brand {
@@ -417,10 +403,10 @@
 
 .content {
   position: relative;
+  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 25rem;
-  gap: 2%;
 }
 @media (max-width: 1050px) {
   .content {
@@ -865,7 +851,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 *,
@@ -896,9 +882,14 @@ html {
 }
 
 h1 {
-  font-size: 4.5rem;
-  font-family: "Akshar", sans-serif !important;
+  font-size: 54px;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 44.1px;
+  }
 }
 @media (max-width: 850px) {
   h1 {
@@ -909,8 +900,13 @@ h1 {
 
 h1 span {
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 70px;
   margin-top: 2rem;
+}
+@media (max-width: 1100px) {
+  h1 span {
+    font-size: 60.1px;
+  }
 }
 @media (max-width: 850px) {
   h1 span {
@@ -961,31 +957,22 @@ a {
 
 .banner {
   position: absolute;
-  background-color: #F6B645;
+  background: linear-gradient(180deg, #D8D6DE 0%, #FFEFE0 100%);
   height: 21rem;
   width: 100vw;
   z-index: -3;
   transform: translateX(-50vw);
   left: 50%;
+  overflow: hidden;
 }
 .banner--hero {
-  top: 15rem;
-  height: 31.5rem;
-}
-@media (max-width: 850px) {
-  .banner--hero {
-    top: 11rem;
-    height: 25rem;
-  }
-}
-@media (max-width: 500px) {
-  .banner--hero {
-    top: 10rem;
-  }
+  top: -0.1rem;
+  height: 100vh;
 }
 .banner--content1 {
   top: 7.2rem;
   height: 21rem;
+  overflow: hidden;
 }
 @media (max-width: 920px) {
   .banner--content1 {
@@ -1000,6 +987,7 @@ a {
 .banner--content2 {
   top: 7.2rem;
   height: 21rem;
+  overflow: hidden;
 }
 @media (max-width: 920px) {
   .banner--content2 {
@@ -1013,12 +1001,15 @@ a {
 }
 .banner--clients {
   height: 10rem;
+  overflow: hidden;
 }
 .banner--prices {
   height: 23rem;
+  overflow: hidden;
 }
 .banner--footer {
   height: 20rem;
+  overflow: hidden;
 }
 @media (max-width: 800px) {
   .banner--footer {

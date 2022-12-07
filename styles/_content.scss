@@ -1,14 +1,15 @@
 .content {
   position: relative;
+  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 25rem;
-  gap: 2%;
+  // gap: 2%;
   @media (max-width: 1050px) {
     margin-top: 0;
   }
   @media (max-width: 500px) {
-    display: block;
+    display: block; 
   }
   &__container {
     position: relative;
