@@ -12,7 +12,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 *,
@@ -21,9 +21,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
-
 
 .overflow {
   width: 100vw;
@@ -40,33 +38,46 @@ html {
   margin: auto;
   width: 100vw;
   max-width: 140rem;
-  min-width: 35rem;
+  min-width: 25rem;
   padding: 0 4%;
 }
 
 h1 {
-  font-size: 4.5rem;
-  font-family: 'Akshar', sans-serif !important;
+  font-size: 54px;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+  @media (max-width: 1100px) {
+    font-size: 44.1px;
+  }
   @media (max-width: 850px) {
     font-size: 3.5rem;
     line-height: 150%;
-
+  }
+  @media (max-width: 500px) {
+    font-size: 3rem;
+    line-height: 100%;
   }
 }
 
-h1 span{
+h1 span {
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 70px;
   margin-top: 2rem;
+  @media (max-width: 1100px) {
+    font-size: 60.1px;
+  }
   @media (max-width: 850px) {
     font-size: 5rem;
+  }
+  @media (max-width: 850px) {
+    font-size: 4rem;
+    line-height: 100%;
   }
 }
 
 h2 {
   font-size: 4.6rem;
-  font-family: 'Akshar', sans-serif;
+  font-family: "Akshar", sans-serif;
   @media (max-width: 1200px) {
     font-size: 3.6rem;
   }
@@ -96,30 +107,29 @@ a {
   font-size: 1.6rem;
   color: black;
 }
-
+button {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
 .banner {
   position: absolute;
-  background-color: $yellow;
+  background-color: #f6b645;
   height: 21rem;
   width: 100vw;
   z-index: -3;
   transform: translateX(-50vw);
   left: 50%;
-
+  overflow: hidden;
   &--hero {
-    top: 15rem;
-    height: 31.5rem;
-    @media (max-width: 850px) {
-      top: 11rem;
-      height: 25rem;
-    }
-    @media (max-width: 500px) {
-      top: 10rem;
-    }
+    background: linear-gradient(180deg, #d8d6de 0%, #ffefe0 100%);
+    top: -0.1rem;
+    height: 100vh;
   }
   &--content1 {
     top: 7.2rem;
     height: 21rem;
+    overflow: hidden;
     @media (max-width: 920px) {
       height: 28.5rem;
     }
@@ -130,6 +140,7 @@ a {
   &--content2 {
     top: 7.2rem;
     height: 21rem;
+    overflow: hidden;
     @media (max-width: 920px) {
       height: 28.5rem;
     }
@@ -139,12 +150,15 @@ a {
   }
   &--clients {
     height: 10rem;
+    overflow: hidden;
   }
   &--prices {
     height: 23rem;
+    overflow: hidden;
   }
   &--footer {
     height: 20rem;
+    overflow: hidden;
     @media (max-width: 800px) {
       height: 25rem;
     }
