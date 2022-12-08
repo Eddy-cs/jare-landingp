@@ -120,7 +120,6 @@ button {
   z-index: -3;
   transform: translateX(-50vw);
   left: 50%;
-  overflow: hidden;
   &--hero {
     background: linear-gradient(180deg, #d8d6de 0%, #ffefe0 100%);
     top: -0.1rem;
@@ -129,7 +128,6 @@ button {
   &--content1 {
     top: 7.2rem;
     height: 21rem;
-    overflow: hidden;
     @media (max-width: 920px) {
       height: 28.5rem;
     }
@@ -140,7 +138,6 @@ button {
   &--content2 {
     top: 7.2rem;
     height: 21rem;
-    overflow: hidden;
     @media (max-width: 920px) {
       height: 28.5rem;
     }
@@ -150,15 +147,12 @@ button {
   }
   &--clients {
     height: 10rem;
-    overflow: hidden;
   }
   &--prices {
     height: 23rem;
-    overflow: hidden;
   }
   &--footer {
     height: 20rem;
-    overflow: hidden;
     @media (max-width: 800px) {
       height: 25rem;
     }
