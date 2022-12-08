@@ -9,28 +9,36 @@
     justify-items: center;
     gap: 2rem;
     @media (max-width: 1300px) {
-
       grid-template-columns: 1fr 1fr;
       row-gap: 10rem;
     }
     @media (max-width: 800px) {
       grid-template-columns: auto;
       padding: 10% 0;
+      row-gap: 5rem;
     }
   }
   &__card {
-    padding: 1.6rem 2.6rem;
+    padding: 2.6rem 2.6rem;
     display: grid;
     height: 59.4rem;
     width: 30.2rem;
     background-color: white;
     border-radius: 24px;
     box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.26);
+    @media (max-width: 800px) {
+      height: 50rem;
+      width: 29rem;
+    }
   }
   &__price {
     font-size: 3.7rem;
     font-weight: bold;
-    color: #9F9F9F;
+    color: #9f9f9f;
+    @media (max-width: 800px) {
+      line-height: 100%;
+      font-size: 3rem;
+    }
   }
   &__description {
     font-size: 1.5rem;
@@ -49,20 +57,21 @@
       display: block;
       content: "";
       height: 5rem;
-      background-image: url(/styles/image/icons/Clipboard-alt.png);
+      background-image: url(/styles/image/icons/Clipboard-alt.svg);
       background-repeat: no-repeat;
       filter: saturate(0%);
     }
   }
   &__button {
-    background-color: $orange-light;
     border-radius: 13px;
     border: none;
     height: 4.3rem;
     cursor: pointer;
+    transition: 0.5;
+    background-color: $button-yellow;
     &:hover {
-      text-decoration: none;
-      background-color: $yellow;
+      color: $button-yellow;
+      background-color: $button-hover;
     }
   }
 }

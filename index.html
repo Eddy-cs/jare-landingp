@@ -24,11 +24,6 @@
             src="/styles/image/background/jare.png"
             alt="LOGO"
           />
-          <!-- <img
-            src="/styles/image/icons/hamburger.png"
-            alt="menu"
-            class="navbar__menu"
-          /> -->
           <div class="hamburger-icon navbar__menu" id="icon">
             <div class="icon-1" id="a"></div>
             <div class="icon-2" id="b"></div>
@@ -61,7 +56,7 @@
             onclick=" window.location.href='https://api.whatsapp.com/send/?phone=593983072062&text=Hola+me+interesa+uno+de+los+planes+Jare!&app_absent=0'"
             class="navbar__button button"
           >
-            <span class="navbar__button--longtxt">Comunicate con nosotros</span>
+            <span class="navbar__button--longtxt">Comunícate con nosotros</span>
             <span class="navbar__button--shorttxt">Comunicate</span>
           </button>
         </nav>
@@ -87,7 +82,7 @@
                 onclick=" window.location.href='https://api.whatsapp.com/send/?phone=593983072062&text=Hola+me+interesa+uno+de+los+planes+Jare!&app_absent=0'"
                 class="hero__button button"
               >
-                Comunicate con nosotros
+                Comunícate con nosotros
               </button>
             </div>
           </div>
@@ -118,13 +113,13 @@
               class="blob__front"
             />
           </div>
+          <p class="hero__bottom">
+            Jare Comunicación basa su estrategia de servicios en el marketing
+            con consciencia, invitando a sus clientes a implentar planes de
+            comunicación que sean honestos, confiables; que creen relaciones
+            duraderas con sus clientes y una imágen corporativa sólida.
+          </p>
         </div>
-        <p class="hero__bottom">
-          Jare Comunicación basa su estrategia de servicios en el marketing con
-          consciencia, invitando a sus clientes a implentar planes de
-          comunicación que sean honestos, confiables; que creen relaciones
-          duraderas con sus clientes y una imágen corporativa sólida.
-        </p>
         <!-- Content_1 -->
         <div id="content" class="content animation__pageLoad--up">
           <div class="banner banner--content1"></div>
@@ -354,11 +349,20 @@
             <div class="footer__social">
               <h3>Siguenos</h3>
               <img
+                class="footer__social--icon"
                 height="28px"
                 src="styles/image/icons/Facebook.svg"
                 alt="Facebook"
+                target="_blank"
+                onclick='window.open("https://www.facebook.com/jarecomunicacion/");return false;'
               />
-              <img src="styles/image/icons/Instagram.svg" alt="Instagram" />
+              <img
+                class="footer__social--icon"
+                src="styles/image/icons/Instagram.svg"
+                alt="Instagram"
+                target="_blank"
+                onclick='window.open("https://www.instagram.com/jarecomunicacion/");return false;'
+              />
             </div>
           </div>
         </footer>

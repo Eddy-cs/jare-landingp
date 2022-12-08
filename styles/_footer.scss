@@ -1,15 +1,14 @@
 @import "variables";
 
-
 .footer {
   padding-top: 8rem;
-&__line{
-  margin: 5rem 0 2rem 0;
-  height: 3px;
-  background-color: white;
-}
+  &__line {
+    margin: 5rem 0 2rem 0;
+    height: 3px;
+    background-color: white;
+  }
 
-  &__info{
+  &__info {
     color: white;
     display: grid;
     justify-items: center;
@@ -19,11 +18,14 @@
       row-gap: 2rem;
     }
   }
-  
-  &__social{
+
+  &__social {
     display: flex;
     gap: 2rem;
     align-items: center;
+    &--icon {
+      cursor: pointer;
+    }
   }
 }
 
