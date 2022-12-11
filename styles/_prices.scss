@@ -1,7 +1,6 @@
 @import "variables";
 
 .prices {
-  // position: relative;
   &__container {
     display: grid;
     padding-top: 8.4rem;
@@ -12,7 +11,7 @@
       grid-template-columns: 1fr 1fr;
       row-gap: 10rem;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 680px) {
       grid-template-columns: auto;
       padding: 10% 0;
       row-gap: 5rem;
@@ -32,12 +31,12 @@
     }
   }
   &__price {
-    font-size: 3.7rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #9f9f9f;
     @media (max-width: 800px) {
       line-height: 100%;
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
   &__description {
