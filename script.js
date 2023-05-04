@@ -33,3 +33,12 @@ icon.addEventListener("click", function () {
   icon2.classList.toggle("c");
   icon3.classList.toggle("b");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".hero__right");
+  header.style.opacity = 0;
+  setTimeout(() => {
+    header.style.transition = "opacity 200ms ease-in-out";
+    header.style.opacity = 1;
+  }, 700);
+});
